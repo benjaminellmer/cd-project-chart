@@ -1,0 +1,7 @@
+apiVersion: v2
+name: cd-project-chart
+description: A simple helm chart, that represents a cd exercise using helm
+type: application
+
+version: 0.0.1
+appVersion: "0.0.1"
