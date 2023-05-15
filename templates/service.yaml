@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: demo
+  namespace: demo-environment
+  labels:
+    app: demo
+spec:
+  selector:
+    app: demo
+  type: LoadBalancer
+  ports:
+    - port: {{ .Values.app.clusterPort }}
+      protocol: TCP
+      targetPort: {{ .Values.app.containerPort }}
