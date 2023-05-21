@@ -1,5 +1,7 @@
+namespace: demo-environment
+
 app:
-  replicaCount: 1
+  replicaCount: 2
   image:
     name: benjaminellmer/my-first-image
     tag: fc1cb3f

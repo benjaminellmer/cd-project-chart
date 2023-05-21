@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment 
 metadata:
   name: demo 
-  namespace: demo-environment
+  namespace: {{ .Values.namespace }}
 spec:
   replicas: {{ .Values.app.replicaCount }}
   selector:
